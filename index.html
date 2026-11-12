@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Web Playground</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="hero">
+        <button id="theme-btn">🌙 تبديل الوضع</button>
+        <h1>My Web Playground</h1>
+        <p>مساحتي الأولى في عالم الويب</p>
+    </header>
+
+    <!-- المحطة 1 -->
+    <section class="card" id="about">
+        <h2>👋 من أنا؟</h2>
+        <p>أنا نوره عبدالله السبيعي، من مسار Web Development، وأتطلع إلى تعلّم بناء صفحات ويب تفاعلية.</p>
+    </section>
+
+    <!-- الويب -->
+    <section class="card" id="web">
+        <h2>🌐 الويب بمفهومي</h2>
+        <p>الويب هو طريقة نوصل فيها لصفحات على الإنترنت. أكتب الرابط، والمتصفح يطلب الصفحة من الخادم، والخادم يرسلها، والمتصفح يعرضها لي.</p>
+
+        <div class="flow">
+            <div class="step">👤 المستخدم</div>
+            <span>←</span>
+            <div class="step">🖥️ المتصفح</div>
+            <span>←</span>
+            <div class="step">🗄️ الخادم</div>
+        </div>
+    </section>
+
+    <!-- HTML -->
+    <section class="card" id="html">
+        <h2>🧱 HTML: هيكل الصفحة</h2>
+        <p>HTML هي اللغة المسؤولة عن هيكل الصفحة ومحتواها: العناوين والفقرات والروابط والصور.</p>
+
+        <div class="demo">
+            <pre dir="ltr"><code>&lt;h1&gt;Hello, Web!&lt;/h1&gt;
+&lt;p&gt;This is my first page.&lt;/p&gt;</code></pre>
+
+            <div class="result">
+                <h1 class="mini-title">Hello, Web!</h1>
+                <p>This is my first page.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CSS -->
+    <section class="card" id="css">
+        <h2>🎨 CSS: تنسيق الصفحة</h2>
+        <p>CSS مسؤولة عن الألوان والخطوط والتنسيق. جرّب بنفسك:</p>
+
+        <div class="demo">
+            <pre dir="ltr"><code>h1 {
+    color: <span id="color-name">purple</span>;
+}</code></pre>
+
+            <div class="result">
+                <h1 class="mini-title" id="css-demo">Hello, Web!</h1>
+            </div>
+        </div>
+
+        <button id="css-btn">طبّق CSS</button>
+    </section>
+
+    <!-- JavaScript -->
+    <section class="card" id="js">
+        <h2>⚡ JavaScript: التفاعل</h2>
+        <p>JavaScript تضيف السلوك والتفاعل للصفحة. اضغط الزر وشوف النص يتغير:</p>
+
+        <div class="demo">
+            <pre dir="ltr"><code>document.querySelector("h1")
+.textContent = "Hello, JS!";</code></pre>
+
+            <div class="result">
+                <h1 class="mini-title" id="js-demo">Hello, Web!</h1>
+            </div>
+        </div>
+
+        <button id="js-btn">شغّل الكود</button>
+    </section>
+
+    <!-- Frontend vs Backend -->
+    <section class="card" id="fb">
+        <h2>↔️ Frontend vs Backend</h2>
+        <p>الصفحة لها جانبان. اضغط على كل بطاقة عشان تشوف المثال:</p>
+
+        <div class="fb-grid">
+
+            <div class="fb-card" id="front">
+                <h3>🖥️ Frontend</h3>
+                <p>اللي تشوفه وتتفاعل معه في الموقع.</p>
+                <p class="example hidden">
+                    مثال (متجر إلكتروني): المنتجات والأزرار وسلة الشراء.
+                </p>
+            </div>
+
+            <div class="fb-card" id="back">
+                <h3>🗄️ Backend</h3>
+                <p>اللي يصير خلف الواجهة.</p>
+                <p class="example hidden">
+                    مثال (متجر إلكتروني): التحقق من تسجيل الدخول ومعالجة الطلب وحفظه في قاعدة البيانات.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AI -->
+    <section class="card" id="ai">
+        <h2>✨ How AI Helped Me</h2>
+
+        <ul>
+            <li><strong>الأداة:</strong> Claude</li>
+
+            <li>
+                <strong>كيف ساعدتني:</strong>
+                ساعدني في ترتيب وتنسيق الصفحة وشرح الأكواد خطوة بخطوة.
+            </li>
+
+            <li>
+                <strong>اللي فهمته أو عدّلته بنفسي:</strong>
+                كتبت أغلب صفحة index بنفسي، وعدّلت الألوان والنصوص، وفهمت كيف يربط JavaScript الزر بالعنصر باستخدام querySelector وaddEventListener.
+            </li>
+        </ul>
+    </section>
+
+</body>
+</html>

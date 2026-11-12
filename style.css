@@ -1,0 +1,221 @@
+
+/* ===== عام ===== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.8;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: background 0.3s, color 0.3s;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #60a5fa;
+}
+
+.hero p {
+    margin-top: 8px;
+}
+
+/* ===== البطاقات ===== */
+
+.card {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.card h2 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+/* ===== تدفق الويب ===== */
+
+.flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: #334155;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ===== عرض الكود والنتيجة ===== */
+
+.demo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+pre {
+    background: #020617;
+    color: #7dd3fc;
+    padding: 14px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: Consolas, monospace;
+    text-align: left;
+}
+
+.result {
+    background: #f8fafc;
+    color: #0f172a;
+    padding: 14px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.mini-title {
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+/* ===== الأزرار ===== */
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 8px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* ===== Frontend vs Backend ===== */
+
+.fb-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.fb-card {
+    background: #334155;
+    padding: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s, color 0.3s;
+}
+
+.fb-card:hover {
+    transform: translateY(-4px);
+    background: #475569;
+}
+
+.fb-card h3 {
+    color: #7dd3fc;
+    margin-bottom: 6px;
+}
+
+.example {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #64748b;
+    color: #fbbf24;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ===== AI ===== */
+
+#ai ul {
+    padding-right: 20px;
+}
+
+/* ===== الوضع النهاري ===== */
+
+body.light {
+    background: #f1f5f9;
+    color: #0f172a;
+}
+
+body.light .hero h1 {
+    color: #2563eb;
+}
+
+body.light .card {
+    background: #ffffff;
+}
+
+body.light .card h2 {
+    color: #2563eb;
+}
+
+body.light .step,
+body.light .fb-card {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+body.light .fb-card h3 {
+    color: #2563eb;
+}
+
+body.light .fb-card:hover {
+    background: #cbd5e1;
+}
+
+/* ===== الجوال ===== */
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .demo,
+    .fb-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 18px;
+    }
+}
